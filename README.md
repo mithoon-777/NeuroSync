@@ -1,70 +1,192 @@
-# Getting Started with Create React App
+# NeuroSync – AI-Based Mental Fatigue Detection and Task Optimization System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+NeuroSync is an AI-powered desktop application designed to monitor user activity patterns and identify potential signs of mental fatigue. The system analyzes keyboard and mouse interactions, work duration, inactivity periods, and productivity indicators to provide real-time fatigue alerts and task management support.
 
-In the project directory, you can run:
+The goal of NeuroSync is to help users maintain productivity, reduce burnout, and improve work efficiency through intelligent behavioral monitoring.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Real-Time Fatigue Detection
 
-### `npm test`
+* Continuous monitoring of user activity
+* Detection of reduced productivity patterns
+* Fatigue scoring mechanism
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Productivity Monitoring
 
-### `npm run build`
+* Work session tracking
+* Activity and inactivity analysis
+* Overtime monitoring
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Smart Alerts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Toast notifications for fatigue warnings
+* Periodic reminder system
+* Configurable monitoring schedules
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Analytics Dashboard
 
-### `npm run eject`
+* Productivity visualization
+* Fatigue trend analysis
+* Historical performance review
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Log Management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* JSON log storage
+* CSV export support
+* System log viewer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Desktop Integration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Electron-based desktop application
+* Background monitoring support
+* System tray integration
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technology Stack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Frontend
 
-### Code Splitting
+* React.js
+* JavaScript
+* CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Desktop Framework
 
-### Analyzing the Bundle Size
+* Electron.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Monitoring & Tracking
 
-### Making a Progressive Web App
+* Keyboard Activity Tracking
+* Mouse Activity Tracking
+* Productivity Analysis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Data Storage
 
-### Advanced Configuration
+* JSON
+* CSV
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Notification System
 
-### Deployment
+* React Toastify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## System Architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+User Activity
+↓
+Keyboard & Mouse Tracking
+↓
+Fatigue Detection Engine
+↓
+Productivity Analysis
+↓
+Alert Generation
+↓
+Dashboard & Logs
+
+---
+
+## Project Structure
+
+NeuroSync/
+
+├── public/
+
+│ ├── electron.js
+
+│ ├── preload.js
+
+│ └── tray-icon.png
+
+│
+
+├── src/
+
+│ ├── components/
+
+│ │ ├── AnalyticsPage.js
+
+│ │ ├── Dashboard.js
+
+│ │ ├── FatigueChart.js
+
+│ │ ├── LogViewer.js
+
+│ │ ├── SystemLogButton.js
+
+│ │ └── TaskManager.js
+
+│ │
+
+│ ├── App.js
+
+│ ├── App.css
+
+│ ├── index.js
+
+│ └── index.css
+
+│
+
+├── package.json
+
+├── package-lock.json
+
+├── README.md
+
+└── LICENSE
+
+---
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/mithoon-777/NeuroSync.git
+
+Navigate to the project:
+
+cd NeuroSync
+
+Install dependencies:
+
+npm install
+
+Run the application:
+
+npm start
+
+---
+
+## Future Enhancements
+
+* Machine Learning based fatigue prediction
+* Webcam-assisted fatigue detection
+* Voice interaction support
+* Personalized productivity recommendations
+* Cloud synchronization
+
+---
+
+## Author
+
+Mithoon Raj
+
+GitHub:
+https://github.com/mithoon-777
+
+LinkedIn:
+https://linkedin.com/in/mithoon-raj-s-a4839a2b6
+
+---
+
+## License
+
+This project is licensed under the MIT License.
