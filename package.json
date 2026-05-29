@@ -1,0 +1,69 @@
+{
+  "name": "neurosync",
+  "version": "0.1.0",
+  "description": "AI-Based Mental Fatigue Detection and Task Optimizer",
+  "author": "S.Mithoon Raj, M.Dhamodharan",
+  "private": true,
+  "homepage": "./",
+  "main": "public/electron.js",
+  "build": {
+    "appId": "com.neurosync.ai",
+    "productName": "NeuroSync",
+    "directories": {
+      "buildResources": "public"
+    },
+    "files": [
+      "build/**/*",
+      "public/tray-icon.png",
+      "public/electron.js",
+      "public/preload.js"
+    ],
+    "extraMetadata": {
+      "main": "public/electron.js"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "electron-is-dev": "^2.0.0",
+    "fs": "^0.0.1-security",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^11.0.5",
+    "uiohook-napi": "^1.5.4",
+    "web-vitals": "^2.1.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "29.3.1",
+    "electron-builder": "24.6.0",
+    "wait-on": "^7.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "electron-start": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "build": "react-scripts build",
+    "dist": "npm run build && electron-builder",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
